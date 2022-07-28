@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <div class="menu">
+        <div class="logo">
+          <a href="#" class="site__logo">
+            Todo.list
+          </a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#"> Overview</a></li>
+            <li><a href="#">Stats</a></li>
+            <li class="picked"><a href="#">Projects</a></li>
+            <li><a href="#">Chat</a><span class="notify">2</span></li>
+            <li><a href="#">Calendar</a></li>
+          </ul>
+        </nav>
+        <footer class="footer nav">
+          <ul>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </footer>
+      </div>
+      <main class="container">
+        <header class="header">
+
+          
+
+          
+
+            <form method="post">
+              <label class="search">
+                <span class="icon"></span>
+              <input type="search" placeholder="Search" />
+              </label>
+            </form>
+            
+            <ul>
+              <li><span class="icon"></span></li>
+              <li><span class="icon"></span></li>
+              <li>
+
+                <div class="dropdown">
+                  <a href="" class="drop-link">Full Name <span class="ctrl"></span></a>
+                  <ul class="dropdown-content">
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Password</a></li>
+                  </ul>
+                </div>
+
+              </li>
+            </ul>
+            <button type="button">
+            <img
+                  class="avatar"
+                  width="100px"
+                  src="./img/avatar.jpg"
+                  alt="photo"
+                />
+              </button>
+          
+        </header>
+        <section class="head">
+          <h1>Projects</h1>
+          <form method="post">
+            <select class="select__arrow" name="time" id="time">
+              <option value="year">This year</option>
+              <option value="week" selected>This week</option>
+              <option value="day">Today</option>
+            </select>
+          </form>
+
+        </section>
+        <section class="projects">
+          <div class="content">
+            <div class="title">
+              <h2>To do</h2>
+              <span class="number">2</span>
+            </div>
+            <button type="button" class="add">
+              <span class="plus"></span>
+            </button>
+            <div class="task">
+              <ul class="task__item">
+                <li>
+                  <div class="task__head">
+                  <h3>Title</h3>
+                  <span class="attachment"></span>
+                </div>
+                </li>
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+                    alias.
+                  </p>
+                </li>
+                <li>
+                  <ul class="author">
+                    <li><span>mj</span></li>
+                    <li><span>hr</span></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="task__item">
+                <li>
+                  <div class="task__head">
+                    <h3>Title</h3>
+                    <span class="attachment hide"></span>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+                    alias.
+                  </p>
+                </li>
+                <li>
+                  <ul class="author">
+                    <li><span>mj</span></li>
+                    <li><span>hr</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <h2>In progres</h2>
+              <span class="number">1</span>
+            </div>
+            <button type="button" class="add">
+              <span class="plus"></span>
+            </button>
+            <div class="task">
+              <ul class="task__item">
+                <li>
+                  <div class="task__head">
+                    <h3>Title</h3>
+                    <span class="attachment"></span>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+                    alias.
+                  </p>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <h2>Completed</h2>
+              <span class="number">0</span>
+            </div>
+            <button type="button" class="add">
+              <span class="plus"></span>
+            </button>
+            <div class="task empty">
+              
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+</html>
