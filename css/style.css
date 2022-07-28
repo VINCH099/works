@@ -115,10 +115,10 @@ a {
 
 .search input {
   border: 0;
-  border: 0;
   width: 330px;
   padding: 10px 10px;
   outline: none;
+  font: inherit;
 }
 
 .search .icon {
@@ -245,6 +245,12 @@ a {
   box-shadow: 0px 0px 17px -9px rgba(34, 60, 80, 0.18);
 }
 
+.task .task__item:hover {
+  -webkit-box-shadow: 0px 0px 9px -1px rgba(34, 60, 80, 0.25);
+  -moz-box-shadow: 0px 0px 9px -1px rgba(34, 60, 80, 0.25);
+  box-shadow: 0px 0px 9px -1px rgba(34, 60, 80, 0.25);
+}
+
 .task ul:active {
   cursor: grab;
 }
@@ -253,13 +259,23 @@ a {
   font-size: 18px;
   font-weight: 400;
   margin: 0;
+  flex-basis: fit-content;
+}
+
+.task__head h3:before {
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #2f8977;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 .task__head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -268,7 +284,6 @@ a {
   height: 15px;
   background-image: url(../img/attachment.svg);
   background-size: 15px 15px;
-  fill: #2f8977;
 }
 
 .hide {
@@ -285,6 +300,7 @@ a {
 
 .task p {
   color: #818181;
+  font-size: 12px;
 }
 
 .author {
@@ -300,13 +316,13 @@ a {
 
 .author li {
   display: inline-block;
-  padding: 8px 10px;
+  padding: 4px 6px;
   text-transform: uppercase;
   background-color: orange;
   color: #fff;
   border-radius: 50%;
   border: 1px solid #fff;
-  height: ;
+  font-size: 14px;
 }
 
 .author li:nth-child(2n) {
