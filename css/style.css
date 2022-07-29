@@ -25,6 +25,7 @@ a {
 .wrapper {
   display: flex;
   justify-content: center;
+  margin: 0 10px;
 }
 
 .menu {
@@ -51,7 +52,6 @@ a {
 }
 
 .nav {
-  margin-bottom: 240px;
 }
 
 .nav ul {
@@ -87,7 +87,7 @@ a {
 
 .nav .notify {
   display: inline-block;
-  padding: 0 8px;
+  padding: 2px 8px;
   background-color: orange;
   color: #fff;
   border-radius: 8px;
@@ -95,7 +95,8 @@ a {
 }
 
 .footer {
-  align-items: flex-end;
+  position: absolute;
+  bottom: 50px;
 }
 
 .container {
@@ -106,6 +107,7 @@ a {
   display: flex;
   align-items: center;
   padding-top: 30px;
+  margin-bottom: 40px;
 }
 
 .search {
@@ -115,7 +117,7 @@ a {
 
 .search input {
   border: 0;
-  width: 330px;
+  max-width: 320px;
   padding: 10px 10px;
   outline: none;
   font: inherit;
@@ -136,7 +138,7 @@ a {
 }
 
 .header button {
-  max-width: 50px;
+  width: 50px;
   height: auto;
   overflow: hidden;
   padding: 0;
@@ -224,14 +226,7 @@ a {
 }
 
 .task {
-  /* padding: 10px; */
-  border-radius: 10px;
-  /* cursor: pointer; */
 }
-
-/* .task:active {
-  cursor: grab;
-} */
 
 .task .task__item {
   background-color: #fff;
@@ -293,6 +288,7 @@ a {
 .empty {
   border: 2px dashed #d3d3d3;
   height: 180px;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 0px 21px -5px rgba(122, 186, 236, 0.14) inset;
   -moz-box-shadow: 0px 0px 21px -5px rgba(122, 186, 236, 0.14) inset;
   box-shadow: 0px 0px 21px -5px rgba(122, 186, 236, 0.14) inset;
@@ -314,9 +310,13 @@ a {
   margin-left: -10px;
 }
 
+/* непонятно li или span */
+.author span {
+}
+
 .author li {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 4px 4px;
   text-transform: uppercase;
   background-color: orange;
   color: #fff;
@@ -329,7 +329,7 @@ a {
   background-color: #5b77f7;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* Выпадающее меню*/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -350,7 +350,6 @@ a {
   background-size: 10px 10px;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -360,7 +359,6 @@ a {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -368,17 +366,14 @@ a {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   color: #a4a4a4;
 }
@@ -389,7 +384,6 @@ a {
   -webkit-appearance: none;
   border: none;
   position: relative;
-
   padding: 5px;
   padding-right: 40px;
   cursor: pointer;
