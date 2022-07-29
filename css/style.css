@@ -155,6 +155,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .projects__head h1 {
@@ -169,7 +170,7 @@ a {
 
 .content {
   background-color: #f5f9fa;
-  height: 100vh;
+  height: 70vh;
   border-radius: 20px;
   padding: 16px;
   flex-basis: calc(100% / 3 - 13.33px);
@@ -255,6 +256,10 @@ a {
   -webkit-box-shadow: 0px 0px 17px -9px rgba(34, 60, 80, 0.18);
   -moz-box-shadow: 0px 0px 17px -9px rgba(34, 60, 80, 0.18);
   box-shadow: 0px 0px 17px -9px rgba(34, 60, 80, 0.18);
+}
+
+.task__item:last-child {
+  margin-bottom: 0;
 }
 
 .task__item:hover {
